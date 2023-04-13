@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="historicalScreenAdminVM" type="com.luissapplication.app.modules.historicalscreenadmin.data.viewmodel.HistoricalScreenAdminVM"/>
+    </data>
+    <FrameLayout android:id="@+id/frameHistoricalscre"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" style="@style/groupStylewhite_A700">
+        <LinearLayout android:id="@+id/linearColumnclose"
+            android:layout_gravity="center"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/_28pxv"
+            android:layout_marginEnd="@dimen/_12pxh"
+            android:layout_marginStart="@dimen/_12pxh"
+            android:layout_marginTop="@dimen/_29pxv"
+            android:layout_width="match_parent" android:orientation="vertical">
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbarToolbar"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_width="match_parent" app:contentInsetStart="0dp">
+                <LinearLayout android:id="@+id/linearRowclose"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <ImageButton
+                        android:background="@drawable/rectangle_bg_gray_50_radius_8"
+                        android:id="@+id/btnClose"
+                        android:layout_height="@dimen/_32pxh"
+                        android:layout_width="@dimen/_32pxh"
+                        android:paddingHorizontal="@dimen/_12pxh"
+                        android:paddingVertical="@dimen/_12pxv"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/img_close" tools:ignore="ContentDescription"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtHistorical"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_1pxv"
+                        android:layout_marginStart="@dimen/_92pxh"
+                        android:layout_marginTop="@dimen/_7pxv"
+                        android:layout_weight="0.71"
+                        android:layout_width="0dp"
+                        android:lineSpacingExtra="@dimen/_8pxh"
+                        android:singleLine="true"
+                        android:text="@{historicalScreenAdminVM.historicalScreenAdminModel.txtHistorical}"
+                        style="@style/txtPoppinsbold16" tools:text="@string/lbl_historical"/>
+                </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
+            <TextView android:id="@+id/txtDescription"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_26pxv"
+                android:layout_width="match_parent"
+                android:lineSpacingExtra="@dimen/_14pxh"
+                android:text="@{historicalScreenAdminVM.historicalScreenAdminModel.txtDescription}"
+                style="@style/txtPoppinsregular12" tools:text="@string/msg_course_dise_o"/>
+            <LinearLayout android:id="@+id/linearDynamicassets"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_9pxh"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_30pxv"
+                android:layout_width="match_parent"
+                android:orientation="vertical" style="@style/groupStylecornerRadius_3">
+                <TextView android:ellipsize="end"
+                    android:gravity="start"
+                    android:id="@+id/txtDynamicassets"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_marginStart="@dimen/_9pxh"
+                    android:layout_width="match_parent"
+                    android:lineSpacingExtra="@dimen/_7pxh"
+                    android:singleLine="true"
+                    android:text="@{historicalScreenAdminVM.historicalScreenAdminModel.txtDynamicassets}"
+                    style="@style/txtPoppinsmedium14_1" tools:text="@string/msg_dynamic_assets"/>
+                <LinearLayout android:gravity="center_horizontal"
+                    android:id="@+id/linearChooseWorkoutC"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStylegray_50cornerRadius">
+
+                    <TextView
+                        android:id="@+id/txtRemotecontrol"
+                        style="@style/txtPoppinsregular12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/_45pxh"
+                        android:layout_marginTop="@dimen/_15pxv"
+                        android:layout_marginEnd="@dimen/_45pxh"
+                        android:layout_marginBottom="@dimen/_16pxv"
+                        android:ellipsize="end"
+                        android:gravity="start"
+                        android:lineSpacingExtra="@dimen/_6pxh"
+                        android:singleLine="true"
+                        android:text="@{historicalScreenAdminVM.historicalScreenAdminModel.txtRemotecontrol}"
+                        tools:text="@string/msg_remote_control" />
+                </LinearLayout>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:ellipsize="end" android:gravity="center"
+                    android:id="@+id/btnSmartPenXOne"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10pxv"
+                    android:layout_width="match_parent"
+                    android:lineSpacingExtra="@dimen/_6pxh"
+                    android:paddingBottom="@dimen/_16pxv"
+                    android:paddingEnd="@dimen/_30pxh"
+                    android:paddingStart="@dimen/_30pxh"
+                    android:paddingTop="@dimen/_16pxv"
+                    android:singleLine="true"
+                    android:text="@string/lbl_smart_pen_x_1"
+                    android:textAllCaps="false"
+                    style="@style/btnSolidRounded" tools:text="@string/lbl_smart_pen_x_1"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:ellipsize="end" android:gravity="center"
+                    android:id="@+id/btnLaptopXThirty"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10pxv"
+                    android:layout_width="match_parent"
+                    android:lineSpacingExtra="@dimen/_6pxh"
+                    android:paddingBottom="@dimen/_16pxv"
+                    android:paddingEnd="@dimen/_30pxh"
+                    android:paddingStart="@dimen/_30pxh"
+                    android:paddingTop="@dimen/_16pxv"
+                    android:singleLine="true"
+                    android:text="@string/lbl_laptop_x_30"
+                    android:textAllCaps="false"
+                    style="@style/btnSolidRounded" tools:text="@string/lbl_laptop_x_30"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:ellipsize="end" android:gravity="center"
+                    android:id="@+id/btnAirConditionerControlXOne"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10pxv"
+                    android:layout_width="match_parent"
+                    android:lineSpacingExtra="@dimen/_6pxh"
+                    android:paddingBottom="@dimen/_16pxv"
+                    android:paddingEnd="@dimen/_30pxh"
+                    android:paddingStart="@dimen/_30pxh"
+                    android:paddingTop="@dimen/_16pxv"
+                    android:singleLine="true"
+                    android:text="@string/msg_air_conditioner"
+                    android:textAllCaps="false"
+                    style="@style/btnSolidRounded" tools:text="@string/msg_air_conditioner"/>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/linearStaticassetsr"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_9pxh"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_25pxv"
+                android:layout_width="match_parent"
+                android:orientation="vertical" style="@style/groupStylecornerRadius_3">
+                <TextView android:ellipsize="end"
+                    android:gravity="start"
+                    android:id="@+id/txtStaticassetsr"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_marginStart="@dimen/_9pxh"
+                    android:layout_width="match_parent"
+                    android:lineSpacingExtra="@dimen/_7pxh"
+                    android:singleLine="true"
+                    android:text="@{historicalScreenAdminVM.historicalScreenAdminModel.txtStaticassetsr}"
+                    style="@style/txtPoppinsmedium14_1" tools:text="@string/msg_static_assets_r"/>
+                <TextView android:ellipsize="end"
+                    android:gravity="start" android:id="@+id/txtPcs"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_1pxv"
+                    android:layout_width="match_parent"
+                    android:lineSpacingExtra="@dimen/_6pxh"
+                    android:paddingBottom="@dimen/_16pxv"
+                    android:paddingStart="@dimen/_30pxh"
+                    android:paddingTop="@dimen/_15pxv"
+                    android:singleLine="true"
+                    android:text="@{historicalScreenAdminVM.historicalScreenAdminModel.txtPcs}"
+                    style="@style/txtSolidRounded" tools:text="@string/lbl_pcs_x_30"/>
+                <TextView android:ellipsize="end"
+                    android:gravity="start"
+                    android:id="@+id/txtAirconditioner"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_14pxv"
+                    android:layout_width="match_parent"
+                    android:lineSpacingExtra="@dimen/_6pxh"
+                    android:paddingBottom="@dimen/_16pxv"
+                    android:paddingStart="@dimen/_30pxh"
+                    android:paddingTop="@dimen/_15pxv"
+                    android:singleLine="true"
+                    android:text="@{historicalScreenAdminVM.historicalScreenAdminModel.txtAirconditioner}"
+                    style="@style/txtSolidRounded" tools:text="@string/msg_air_conditioner2"/>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/linearBoxofcomments"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_9pxh"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_28pxv"
+                android:layout_width="match_parent"
+                android:orientation="vertical" style="@style/groupStylecornerRadius_3">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtComments"
+                    android:layout_gravity="start"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_marginStart="@dimen/_8pxh"
+                    android:layout_width="wrap_content"
+                    android:lineSpacingExtra="@dimen/_7pxh"
+                    android:singleLine="true"
+                    android:text="@{historicalScreenAdminVM.historicalScreenAdminModel.txtComments}"
+                    style="@style/txtPoppinsmedium14_1" tools:text="@string/lbl_comments"/>
+                <LinearLayout android:gravity="center_horizontal"
+                    android:id="@+id/linearColumndescriptionOne"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStylegray_50cornerRadius">
+                    <TextView android:gravity="start"
+                        android:id="@+id/txtDescriptionOne"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="@dimen/_13pxv"
+                        android:layout_marginEnd="@dimen/_13pxh"
+                        android:layout_marginStart="@dimen/_13pxh"
+                        android:layout_marginTop="@dimen/_11pxv"
+                        android:layout_width="match_parent"
+                        android:lineSpacingExtra="@dimen/_6pxh"
+                        android:text="@{historicalScreenAdminVM.historicalScreenAdminModel.txtDescriptionOne}"
+                        style="@style/txtPoppinsregular12" tools:text="@string/msg_lorem_ipsum_dol"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</layout>

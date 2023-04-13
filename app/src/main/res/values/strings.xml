@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+    <string name="app_name">luis_s_application16</string>
+    <string name="loading">Loading…</string>
+    <string name="no_internet_connection">No internet connection!</string>
+<string name="lbl_continue">Continue</string>
+<string name="msg_dynamic_assets">Dynamic assets received:</string>
+<string name="lbl_uniactivos">UniActivos</string>
+<string name="lbl_march">March</string>
+<string name="msg_edit_your_accou2">Edit your Account</string>
+<string name="msg_confirm_passwor">Confirm Password</string>
+<string name="lbl_phone">Phone</string>
+<string name="msg_hey_i_finished2">Hey, I finished using the classroom</string>
+<string name="lbl_programaci_n_ii">Programación II</string>
+<string name="lbl_hey_there">Hey there,</string>
+<string name="lbl_new_password">New Password</string>
+<string name="msg_lorem_ipsum_dol2">Lorem ipsum dolor sit amet consectetur.  Vel pellentesque convallis elit egestas facilisis et. 
+Feugiat et tincidunt cras in massa elit nibh.</string>
+<string name="msg_11_available_1">11  Available
+10 In use
+11 Damaged</string>
+<string name="lbl_log_out">Log out</string>
+<string name="lbl_edit">Edit</string>
+<string name="msg_air_conditioner">Air conditioner control x 1</string>
+<string name="lbl_thus">Thus</string>
+<string name="lbl_29_may">29 May</string>
+<string name="lbl_notifications">Notifications</string>
+<string name="lbl_friday">Friday</string>
+<string name="lbl_dynamic_assets">Dynamic Assets</string>
+<string name="msg_hey_everything">Hey, everything is ok</string>
+<string name="msg_course_dise_o">Course: Diseño y Programación de Aplicaciones Móviles
+Miguel Corrales Ureña
+Schedule: 6:00 pm - 7-40 pm
+14/03/2023</string>
+<string name="lbl_cancel">Cancel</string>
+<string name="lbl_wed">Wed</string>
+<string name="lbl_speaker">Speaker</string>
+<string name="lbl_sun">Sun</string>
+<string name="msg_current_passwor">Current Password</string>
+<string name="lbl_8_april">8 April</string>
+<string name="lbl_historical">Historical</string>
+<string name="lbl_classes_left">classes left</string>
+<string name="msg_pop_up_notifica">Pop-up Notification</string>
+<string name="lbl_class_2001">Class: 2001</string>
+<string name="lbl_remote_control">Remote Control</string>
+<string name="lbl_2023">2023</string>
+<string name="lbl_view_more">View more</string>
+<string name="msg_forgot_your_pas">Forgot your password?</string>
+<string name="msg_maikol_guzman_a">Maikol Guzman Alan</string>
+<string name="lbl_university">University</string>
+<string name="msg_laptop_11_avail">Laptop
+11 available</string>
+<string name="lbl_password">Password</string>
+<string name="lbl_fri">Fri</string>
+<string name="lbl_saved">Saved</string>
+<string name="msg_about_3_hours_a">About 3 hours ago</string>
+<string name="lbl_reports">Reports</string>
+<string name="lbl_accept">Accept</string>
+<string name="msg_checkout_classr">Checkout Classroom 2001</string>
+<string name="msg_about_1_minutes">About 1 minutes ago</string>
+<string name="lbl_account">Account</string>
+<string name="lbl_assets">Assets</string>
+<string name="msg_dise_o_y_progra">Diseño y programación de aplicaciones moviles</string>
+<string name="msg_hey_i_finished">Hey, I finished my class</string>
+<string name="msg_miguel_corrales">Miguel Corrales Ureña</string>
+<string name="lbl_laptop_x_30">Laptop x 30</string>
+<string name="msg_12_available">12 Available | 20 Total</string>
+<string name="lbl_sat">Sat</string>
+<string name="lbl_12">12</string>
+<string name="lbl_13">13</string>
+<string name="lbl_comments">Comments:</string>
+<string name="lbl_16">16</string>
+<string name="lbl_14">14</string>
+<string name="msg_lorem_ipsum_dol">Lorem ipsum dolor sit amet consectetur. Vel pellentesque convallis elit egestas facilisis et. Feugiat et tincidunt cras in massa elit nibh.</string>
+<string name="lbl_15">15</string>
+<string name="lbl_welcome_pedro">Welcome, Pedro</string>
+<string name="msg_static_assets_r">Static assets received:</string>
+<string name="lbl_profile">Profile</string>
+<string name="lbl_student">Student</string>
+<string name="msg_11_available">11 Available | 32 Total</string>
+<string name="msg_remote_control">Remote control x 1</string>
+<string name="lbl_save">Save</string>
+<string name="lbl_email">Email</string>
+<string name="lbl_may_2021">May 2021</string>
+<string name="lbl_2">2</string>
+<string name="msg_student_stefan">Student: Stefanie Wong</string>
+<string name="lbl_3">3</string>
+<string name="msg_do_you_want_to">Do you want to logout?</string>
+<string name="msg_14_available">14 Available | 20 Total</string>
+<string name="lbl_login">Login</string>
+<string name="msg_air_conditioner2">Air conditioner x 1</string>
+<string name="msg_booked_classroo3">Booked Classroom 1004</string>
+<string name="lbl_smart_pen_x_1">Smart pen x 1</string>
+<string name="msg_edit_your_accou">Edit your account</string>
+<string name="msg_booked_classroo2">Booked Classroom 2001</string>
+<string name="msg_class_in_progre">class in progress</string>
+<string name="lbl_notification">Notification</string>
+<string name="lbl_open">Open</string>
+<string name="lbl_welcome_back">Welcome Back</string>
+<string name="lbl_1_00pm_2_40pm2"> 1:00pm - 2:40pm</string>
+<string name="msg_booked_classroo">Booked classroom!</string>
+<string name="lbl_juan_pascal">Juan Pascal</string>
+<string name="msg_6_00pm_7_40_p">6:00pm - 7:40 pm</string>
+<string name="msg_oops_an_issue">Oops,  an issue has been reported </string>
+<string name="msg_gregorio_villal">Gregorio Villalobos </string>
+<string name="lbl_pcs_x_30">Pcs x 30</string>
+<string name="lbl_laptop">Laptop</string>
+<string name="msg_class_2001_ste">Class: 2001
+Stefanie Wong
+Schedule: 1:00pm - 2:40pm</string>
+<string name="lbl_stefani_wong">Stefani Wong</string>
+<string name="lbl_1_00pm_2_40pm">1:00pm - 2:40pm</string>
+<string name="lbl_markers">Markers</string>
+<string name="msg_please_enter_valid_pa">Please enter valid password</string>
+<string name="msg_please_enter_valid_phone_nu">Please enter valid phone number</string>
+<string name="msg_please_enter_valid_email">Please enter valid email</string>
+</resources>

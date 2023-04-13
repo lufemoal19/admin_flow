@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="splashScreenVM" type="com.luissapplication.app.modules.splashscreen.data.viewmodel.SplashScreenVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearSplashscreen"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" android:orientation="vertical">
+        <LinearLayout android:gravity="center_horizontal"
+            android:id="@+id/linearSplashScreen"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStyle">
+            <ImageView android:id="@+id/imageIcono"
+                android:layout_gravity="end"
+                android:layout_height="@dimen/_160pxh"
+                android:layout_marginEnd="@dimen/_61pxh"
+                android:layout_marginStart="@dimen/_61pxh"
+                android:layout_marginTop="@dimen/_280pxv"
+                android:layout_width="@dimen/_223pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_icono"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_icono"/>
+            <TextView android:ellipsize="end" android:gravity="end"
+                android:id="@+id/txtUniActivos"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_20pxv"
+                android:layout_marginEnd="@dimen/_71pxh"
+                android:layout_marginStart="@dimen/_71pxh"
+                android:layout_marginTop="@dimen/_22pxv"
+                android:layout_width="match_parent"
+                android:lineSpacingExtra="@dimen/_18pxh"
+                android:singleLine="true"
+                android:text="@{splashScreenVM.splashScreenModel.txtUniActivos}"
+                style="@style/txtPoppinsbold36" tools:text="@string/lbl_uniactivos"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

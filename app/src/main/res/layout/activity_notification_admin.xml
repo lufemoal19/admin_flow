@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="notificationAdminVM" type="com.luissapplication.app.modules.notificationadmin.data.viewmodel.NotificationAdminVM"/>
+    </data>
+    <FrameLayout android:id="@+id/frameNotificationad"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" style="@style/groupStylewhite_A700">
+        <LinearLayout android:id="@+id/linearColumnclose"
+            android:layout_gravity="center"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/_26pxv"
+            android:layout_marginEnd="@dimen/_21pxh"
+            android:layout_marginStart="@dimen/_24pxh"
+            android:layout_marginTop="@dimen/_26pxv"
+            android:layout_width="match_parent" android:orientation="vertical">
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbarToolbar"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_width="match_parent" app:contentInsetStart="0dp">
+                <LinearLayout android:id="@+id/linearRowclose"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <ImageButton
+                        android:background="@drawable/rectangle_bg_gray_50_radius_8"
+                        android:id="@+id/btnClose"
+                        android:layout_height="@dimen/_32pxh"
+                        android:layout_width="@dimen/_32pxh"
+                        android:paddingHorizontal="@dimen/_12pxh"
+                        android:paddingVertical="@dimen/_12pxv"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/img_close" tools:ignore="ContentDescription"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtNotification"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_1pxv"
+                        android:layout_marginStart="@dimen/_80pxh"
+                        android:layout_marginTop="@dimen/_7pxv"
+                        android:layout_weight="0.75"
+                        android:layout_width="0dp"
+                        android:lineSpacingExtra="@dimen/_8pxh"
+                        android:singleLine="true"
+                        android:text="@{notificationAdminVM.notificationAdminModel.txtNotification}"
+                        style="@style/txtPoppinsbold16" tools:text="@string/lbl_notification"/>
+                </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
+            <TextView android:gravity="center_horizontal"
+                android:id="@+id/txtTime"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_75pxh"
+                android:layout_marginStart="@dimen/_75pxh"
+                android:layout_marginTop="@dimen/_19pxv"
+                android:layout_width="match_parent"
+                android:lineSpacingExtra="@dimen/_14pxh"
+                android:text="@{notificationAdminVM.notificationAdminModel.txtTime}"
+                style="@style/txtPoppinsregular12" tools:text="@string/msg_class_2001_ste"/>
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearDynamicassets"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_37pxv"
+                android:layout_width="match_parent"
+                android:orientation="vertical" style="@style/groupStylecornerRadius_3">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtDynamicassets"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_marginStart="@dimen/_2pxh"
+                    android:layout_width="match_parent"
+                    android:lineSpacingExtra="@dimen/_7pxh"
+                    android:singleLine="true"
+                    android:text="@{notificationAdminVM.notificationAdminModel.txtDynamicassets}"
+                    style="@style/txtPoppinsmedium14_1" tools:text="@string/msg_dynamic_assets"/>
+                <LinearLayout android:gravity="center_horizontal"
+                    android:id="@+id/linearAsset1"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStylegray_50cornerRadius">
+                    <TextView android:ellipsize="end"
+                        android:gravity="start"
+                        android:id="@+id/txtRemotecontrol"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="@dimen/_16pxv"
+                        android:layout_marginEnd="@dimen/_45pxh"
+                        android:layout_marginStart="@dimen/_45pxh"
+                        android:layout_marginTop="@dimen/_15pxv"
+                        android:layout_width="match_parent"
+                        android:lineSpacingExtra="@dimen/_6pxh"
+                        android:singleLine="true"
+                        android:text="@{notificationAdminVM.notificationAdminModel.txtRemotecontrol}"
+                        style="@style/txtPoppinsregular12" tools:text="@string/msg_remote_control"/>
+                </LinearLayout>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:ellipsize="end" android:gravity="center"
+                    android:id="@+id/btnSmartPenXOne"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10pxv"
+                    android:layout_width="match_parent"
+                    android:lineSpacingExtra="@dimen/_6pxh"
+                    android:paddingBottom="@dimen/_16pxv"
+                    android:paddingEnd="@dimen/_30pxh"
+                    android:paddingStart="@dimen/_30pxh"
+                    android:paddingTop="@dimen/_16pxv"
+                    android:singleLine="true"
+                    android:text="@string/lbl_smart_pen_x_1"
+                    android:textAllCaps="false"
+                    style="@style/btnSolidRounded" tools:text="@string/lbl_smart_pen_x_1"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:ellipsize="end" android:gravity="center"
+                    android:id="@+id/btnLaptopXThirty"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10pxv"
+                    android:layout_width="match_parent"
+                    android:lineSpacingExtra="@dimen/_6pxh"
+                    android:paddingBottom="@dimen/_16pxv"
+                    android:paddingEnd="@dimen/_30pxh"
+                    android:paddingStart="@dimen/_30pxh"
+                    android:paddingTop="@dimen/_16pxv"
+                    android:singleLine="true"
+                    android:text="@string/lbl_laptop_x_30"
+                    android:textAllCaps="false"
+                    style="@style/btnSolidRounded" tools:text="@string/lbl_laptop_x_30"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:ellipsize="end" android:gravity="center"
+                    android:id="@+id/btnAirConditionerControlXOne"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10pxv"
+                    android:layout_width="match_parent"
+                    android:lineSpacingExtra="@dimen/_6pxh"
+                    android:paddingBottom="@dimen/_16pxv"
+                    android:paddingEnd="@dimen/_30pxh"
+                    android:paddingStart="@dimen/_30pxh"
+                    android:paddingTop="@dimen/_16pxv"
+                    android:singleLine="true"
+                    android:text="@string/msg_air_conditioner"
+                    android:textAllCaps="false"
+                    style="@style/btnSolidRounded" tools:text="@string/msg_air_conditioner"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearStaticassetss"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_33pxv"
+                android:layout_width="match_parent"
+                android:orientation="vertical" style="@style/groupStylecornerRadius_3">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtStaticassetsr"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_width="match_parent"
+                    android:lineSpacingExtra="@dimen/_7pxh"
+                    android:singleLine="true"
+                    android:text="@{notificationAdminVM.notificationAdminModel.txtStaticassetsr}"
+                    style="@style/txtPoppinsmedium14_1" tools:text="@string/msg_static_assets_r"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtGroupFour"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_1pxv"
+                    android:layout_width="match_parent"
+                    android:lineSpacingExtra="@dimen/_6pxh"
+                    android:paddingBottom="@dimen/_16pxv"
+                    android:paddingStart="@dimen/_30pxh"
+                    android:paddingTop="@dimen/_15pxv"
+                    android:singleLine="true"
+                    android:text="@{notificationAdminVM.notificationAdminModel.txtGroupFour}"
+                    style="@style/txtSolidRounded" tools:text="@string/lbl_pcs_x_30"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtGroupThree"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_14pxv"
+                    android:layout_width="match_parent"
+                    android:lineSpacingExtra="@dimen/_6pxh"
+                    android:paddingBottom="@dimen/_16pxv"
+                    android:paddingStart="@dimen/_30pxh"
+                    android:paddingTop="@dimen/_15pxv"
+                    android:singleLine="true"
+                    android:text="@{notificationAdminVM.notificationAdminModel.txtGroupThree}"
+                    style="@style/txtSolidRounded" tools:text="@string/msg_air_conditioner2"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal"
+                android:id="@+id/linearComments"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_41pxv"
+                android:layout_width="match_parent"
+                android:orientation="vertical" style="@style/groupStylecornerRadius_3">
+                <LinearLayout android:id="@+id/linearBoxofcomments"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStylecornerRadius_3">
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtComments"
+                        android:layout_gravity="start"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:layout_marginStart="@dimen/_8pxh"
+                        android:layout_width="wrap_content"
+                        android:lineSpacingExtra="@dimen/_7pxh"
+                        android:singleLine="true"
+                        android:text="@{notificationAdminVM.notificationAdminModel.txtComments}"
+                        style="@style/txtPoppinsmedium14_1" tools:text="@string/lbl_comments"/>
+                    <LinearLayout android:gravity="center_horizontal"
+                        android:id="@+id/linearColumndescription"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical" style="@style/groupStylegray_50cornerRadius">
+                        <TextView android:gravity="center_horizontal"
+                            android:id="@+id/txtDescription"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="@dimen/_19pxv"
+                            android:layout_marginEnd="@dimen/_16pxh"
+                            android:layout_marginStart="@dimen/_16pxh"
+                            android:layout_marginTop="@dimen/_13pxv"
+                            android:layout_width="match_parent"
+                            android:lineSpacingExtra="@dimen/_6pxh"
+                            android:text="@{notificationAdminVM.notificationAdminModel.txtDescription}"
+                            style="@style/txtPoppinsregular12" tools:text="@string/msg_lorem_ipsum_dol"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</layout>

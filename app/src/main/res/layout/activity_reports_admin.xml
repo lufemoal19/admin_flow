@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="reportsAdminVM" type="com.luissapplication.app.modules.reportsadmin.data.viewmodel.ReportsAdminVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearReportsAdmin"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearColumnarrowleft"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_22pxh"
+            android:layout_marginStart="@dimen/_23pxh"
+            android:layout_marginTop="@dimen/_33pxv"
+            android:layout_width="match_parent" android:orientation="vertical">
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbarToolbar"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginStart="@dimen/_2pxh"
+                android:layout_width="match_parent" app:contentInsetStart="0dp">
+                <LinearLayout android:id="@+id/linearRowarrowleft"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <ImageButton
+                        android:background="@drawable/rectangle_bg_gray_50_radius_8"
+                        android:id="@+id/btnArrowleft"
+                        android:layout_height="@dimen/_32pxh"
+                        android:layout_width="@dimen/_32pxh"
+                        android:paddingHorizontal="@dimen/_11pxh"
+                        android:paddingVertical="@dimen/_11pxv"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/img_arrowleft_gray_900" tools:ignore="ContentDescription"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtReports"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_1pxv"
+                        android:layout_marginStart="@dimen/_91pxh"
+                        android:layout_marginTop="@dimen/_6pxv"
+                        android:layout_weight="0.67"
+                        android:layout_width="0dp"
+                        android:lineSpacingExtra="@dimen/_8pxh"
+                        android:singleLine="true"
+                        android:text="@{reportsAdminVM.reportsAdminModel.txtReports}"
+                        style="@style/txtPoppinsbold16" tools:text="@string/lbl_reports"/>
+                </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
+            <LinearLayout android:gravity="center_horizontal"
+                android:id="@+id/linearDate4"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_24pxv"
+                android:layout_width="match_parent"
+                android:orientation="vertical" style="@style/groupStylecornerRadius_4">
+                <FrameLayout android:id="@+id/frameBg"
+                    android:layout_gravity="start"
+                    android:layout_height="@dimen/_125pxv"
+                    android:layout_width="@dimen/_315pxh" style="@style/groupStylecornerRadius_4">
+                    <ImageView android:id="@+id/imageRectangleReport"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="@dimen/_120pxh"
+                        android:layout_width="match_parent"
+                        android:scaleType="fitXY"
+                        cornerRadius="@{@dimen/_10pxh}"
+                        imageRes="@{@drawable/img_rectangle5424}"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle5424"/>
+
+                    <LinearLayout
+                        android:id="@+id/linearColumnweekday"
+                        android:layout_width="69dp"
+                        android:layout_height="111dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginStart="@dimen/_136pxh"
+                        android:layout_marginTop="@dimen/_4pxv"
+                        android:layout_marginEnd="@dimen/_136pxh"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtWeekday"
+                            style="@style/txtInterregular12"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_1pxh"
+                            android:ellipsize="end"
+                            android:gravity="center_horizontal"
+                            android:lineSpacingExtra="@dimen/_3pxh"
+                            android:singleLine="true"
+                            android:text="@{reportsAdminVM.reportsAdminModel.txtWeekday}"
+                            tools:text="@string/lbl_friday" />
+
+                        <TextView
+                            android:id="@+id/txtFourteen"
+                            style="@style/txtIntermedium14"
+                            android:layout_width="52dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_9pxh"
+                            android:layout_marginTop="@dimen/_10pxv"
+                            android:layout_marginEnd="@dimen/_10pxh"
+                            android:ellipsize="end"
+                            android:gravity="center_horizontal"
+                            android:lineSpacingExtra="@dimen/_3pxh"
+                            android:singleLine="true"
+                            android:text="@{reportsAdminVM.reportsAdminModel.txtFourteen}"
+                            tools:text="@string/lbl_14" />
+
+                        <TextView
+                            android:id="@+id/txtMarch"
+                            style="@style/txtInterregular12"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_8pxv"
+                            android:ellipsize="end"
+                            android:gravity="center"
+                            android:lineSpacingExtra="@dimen/_3pxh"
+                            android:singleLine="true"
+                            android:text="@{reportsAdminVM.reportsAdminModel.txtMarch}"
+                            tools:text="@string/lbl_march" />
+
+                        <TextView
+                            android:id="@+id/txtZipcode"
+                            style="@style/txtInterregular12"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_4pxh"
+                            android:layout_marginTop="@dimen/_8pxv"
+                            android:layout_marginEnd="@dimen/_1pxh"
+                            android:ellipsize="end"
+                            android:gravity="center"
+                            android:lineSpacingExtra="@dimen/_3pxh"
+                            android:singleLine="true"
+                            android:text="@{reportsAdminVM.reportsAdminModel.txtZipcode}"
+                            tools:text="@string/lbl_2023" />
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/linearReportsAdmin1"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_23pxh"
+            android:layout_marginStart="@dimen/_23pxh"
+            android:layout_marginTop="@dimen/_12pxv"
+            android:layout_width="match_parent" android:orientation="vertical">
+            <LinearLayout android:id="@+id/linearRowdiseoyprograOne"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_2pxh"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <LinearLayout android:gravity="start"
+                    android:id="@+id/linearColumndiseoyprograOne"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.89"
+                    android:layout_width="0dp" android:orientation="vertical">
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtDiseoyprograOne"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:lineSpacingExtra="@dimen/_6pxh"
+                        android:singleLine="true"
+                        android:text="@{reportsAdminVM.reportsAdminModel.txtDiseoyprograOne}"
+                        style="@style/txtPoppinsregular11" tools:text="@string/msg_dise_o_y_progra"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtMiguelCorrales"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:layout_marginStart="@dimen/_2pxh"
+                        android:layout_marginTop="@dimen/_4pxv"
+                        android:layout_width="wrap_content"
+                        android:lineSpacingExtra="@dimen/_6pxh"
+                        android:singleLine="true"
+                        android:text="@{reportsAdminVM.reportsAdminModel.txtMiguelCorrales}"
+                        style="@style/txtPoppinsregular11" tools:text="@string/msg_miguel_corrales"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtTimeOne"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:layout_marginStart="@dimen/_2pxh"
+                        android:layout_marginTop="@dimen/_4pxv"
+                        android:layout_width="wrap_content"
+                        android:lineSpacingExtra="@dimen/_5pxh"
+                        android:singleLine="true"
+                        android:text="@{reportsAdminVM.reportsAdminModel.txtTimeOne}"
+                        style="@style/txtPoppinsregular10" tools:text="@string/msg_6_00pm_7_40_p"/>
+                </LinearLayout>
+                <ImageButton
+                    android:background="@drawable/rectangle_bg_gray_50_radius_8"
+                    android:id="@+id/btnArrowleftTwo"
+                    android:layout_height="@dimen/_32pxh"
+                    android:layout_marginBottom="@dimen/_25pxv"
+                    android:layout_marginStart="@dimen/_11pxh"
+                    android:layout_marginTop="@dimen/_1pxv"
+                    android:layout_width="@dimen/_32pxh"
+                    android:paddingHorizontal="@dimen/_11pxh"
+                    android:paddingVertical="@dimen/_11pxv"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/img_arrowleft_gray_900" tools:ignore="ContentDescription"/>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/linearRowprogramacinii"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_2pxh"
+                android:layout_marginTop="@dimen/_12pxv"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <LinearLayout android:gravity="start"
+                    android:id="@+id/linearColumnprogramacinii"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_2pxv"
+                    android:layout_weight="0.9"
+                    android:layout_width="0dp" android:orientation="vertical">
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtProgramacinII"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:layout_marginStart="@dimen/_1pxh"
+                        android:layout_width="wrap_content"
+                        android:lineSpacingExtra="@dimen/_6pxh"
+                        android:singleLine="true"
+                        android:text="@{reportsAdminVM.reportsAdminModel.txtProgramacinII}"
+                        style="@style/txtPoppinsregular11" tools:text="@string/lbl_programaci_n_ii"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtMaikolGuzmanA"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:layout_marginTop="@dimen/_2pxv"
+                        android:layout_width="wrap_content"
+                        android:lineSpacingExtra="@dimen/_6pxh"
+                        android:singleLine="true"
+                        android:text="@{reportsAdminVM.reportsAdminModel.txtMaikolGuzmanA}"
+                        style="@style/txtPoppinsregular11" tools:text="@string/msg_maikol_guzman_a"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtTimeTwo"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:layout_marginTop="@dimen/_5pxv"
+                        android:layout_width="wrap_content"
+                        android:lineSpacingExtra="@dimen/_5pxh"
+                        android:singleLine="true"
+                        android:text="@{reportsAdminVM.reportsAdminModel.txtTimeTwo}"
+                        style="@style/txtPoppinsregular10" tools:text="@string/msg_6_00pm_7_40_p"/>
+                </LinearLayout>
+                <ImageButton
+                    android:background="@drawable/rectangle_bg_gray_50_radius_8"
+                    android:id="@+id/btnArrowleftThree"
+                    android:layout_height="@dimen/_32pxh"
+                    android:layout_marginBottom="@dimen/_28pxv"
+                    android:layout_width="@dimen/_32pxh"
+                    android:paddingHorizontal="@dimen/_11pxh"
+                    android:paddingVertical="@dimen/_11pxv"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/img_arrowleft_gray_900" tools:ignore="ContentDescription"/>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/linearRowbookedclassroo"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_2pxh"
+                android:layout_marginStart="@dimen/_1pxh"
+                android:layout_marginTop="@dimen/_18pxv"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <LinearLayout android:gravity="start"
+                    android:id="@+id/linearColumnbookedclassroo"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_1pxv"
+                    android:layout_weight="0.9"
+                    android:layout_width="0dp" android:orientation="vertical">
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtBookedClassroo"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:layout_marginStart="@dimen/_1pxh"
+                        android:layout_width="wrap_content"
+                        android:lineSpacingExtra="@dimen/_6pxh"
+                        android:singleLine="true"
+                        android:text="@{reportsAdminVM.reportsAdminModel.txtBookedClassroo}"
+                        style="@style/txtPoppinsregular11" tools:text="@string/msg_booked_classroo2"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtStefaniWong"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:layout_marginTop="@dimen/_5pxv"
+                        android:layout_width="wrap_content"
+                        android:lineSpacingExtra="@dimen/_6pxh"
+                        android:singleLine="true"
+                        android:text="@{reportsAdminVM.reportsAdminModel.txtStefaniWong}"
+                        style="@style/txtPoppinsregular11" tools:text="@string/lbl_stefani_wong"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtTimeThree"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:layout_marginStart="@dimen/_2pxh"
+                        android:layout_marginTop="@dimen/_4pxv"
+                        android:layout_width="wrap_content"
+                        android:lineSpacingExtra="@dimen/_6pxh"
+                        android:singleLine="true"
+                        android:text="@{reportsAdminVM.reportsAdminModel.txtTimeThree}"
+                        style="@style/txtPoppinsregular12" tools:text="@string/lbl_1_00pm_2_40pm2"/>
+                </LinearLayout>
+                <ImageButton
+                    android:background="@drawable/rectangle_bg_gray_50_radius_8"
+                    android:id="@+id/btnArrowleftFour"
+                    android:layout_height="@dimen/_32pxh"
+                    android:layout_marginBottom="@dimen/_31pxv"
+                    android:layout_width="@dimen/_32pxh"
+                    android:paddingHorizontal="@dimen/_11pxh"
+                    android:paddingVertical="@dimen/_11pxv"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/img_arrowleft_gray_900" tools:ignore="ContentDescription"/>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/linearRowbookedclassrooOne"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_2pxh"
+                android:layout_marginStart="@dimen/_1pxh"
+                android:layout_marginTop="@dimen/_15pxv"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <LinearLayout android:gravity="start"
+                    android:id="@+id/linearColumnbookedclassrooOne"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_1pxv"
+                    android:layout_weight="0.9"
+                    android:layout_width="0dp" android:orientation="vertical">
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtBookedClassrooOne"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:layout_marginStart="@dimen/_1pxh"
+                        android:layout_width="wrap_content"
+                        android:lineSpacingExtra="@dimen/_6pxh"
+                        android:singleLine="true"
+                        android:text="@{reportsAdminVM.reportsAdminModel.txtBookedClassrooOne}"
+                        style="@style/txtPoppinsregular11" tools:text="@string/msg_booked_classroo3"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtStefaniWongOne"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:layout_marginTop="@dimen/_5pxv"
+                        android:layout_width="wrap_content"
+                        android:lineSpacingExtra="@dimen/_6pxh"
+                        android:singleLine="true"
+                        android:text="@{reportsAdminVM.reportsAdminModel.txtStefaniWongOne}"
+                        style="@style/txtPoppinsregular11" tools:text="@string/lbl_stefani_wong"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtTimeFour"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:layout_marginStart="@dimen/_2pxh"
+                        android:layout_marginTop="@dimen/_4pxv"
+                        android:layout_width="wrap_content"
+                        android:lineSpacingExtra="@dimen/_6pxh"
+                        android:singleLine="true"
+                        android:text="@{reportsAdminVM.reportsAdminModel.txtTimeFour}"
+                        style="@style/txtPoppinsregular12" tools:text="@string/lbl_1_00pm_2_40pm2"/>
+                </LinearLayout>
+                <ImageButton
+                    android:background="@drawable/rectangle_bg_gray_50_radius_8"
+                    android:id="@+id/btnArrowleftFive"
+                    android:layout_height="@dimen/_32pxh"
+                    android:layout_marginBottom="@dimen/_31pxv"
+                    android:layout_width="@dimen/_32pxh"
+                    android:paddingHorizontal="@dimen/_11pxh"
+                    android:paddingVertical="@dimen/_11pxv"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/img_arrowleft_gray_900" tools:ignore="ContentDescription"/>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/linearRowcheckoutclassr"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_1pxh"
+                android:layout_marginTop="@dimen/_12pxv"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <LinearLayout android:gravity="start"
+                    android:id="@+id/linearColumncheckoutclassr"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.9"
+                    android:layout_width="0dp" android:orientation="vertical">
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtCheckoutClassr"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:layout_marginStart="@dimen/_1pxh"
+                        android:layout_width="match_parent"
+                        android:lineSpacingExtra="@dimen/_6pxh"
+                        android:singleLine="true"
+                        android:text="@{reportsAdminVM.reportsAdminModel.txtCheckoutClassr}"
+                        style="@style/txtPoppinsregular11" tools:text="@string/msg_checkout_classr"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtStefaniWongTwo"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:layout_marginTop="@dimen/_5pxv"
+                        android:layout_width="wrap_content"
+                        android:lineSpacingExtra="@dimen/_6pxh"
+                        android:singleLine="true"
+                        android:text="@{reportsAdminVM.reportsAdminModel.txtStefaniWongTwo}"
+                        style="@style/txtPoppinsregular11" tools:text="@string/lbl_stefani_wong"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtTimeFive"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:layout_marginStart="@dimen/_2pxh"
+                        android:layout_marginTop="@dimen/_4pxv"
+                        android:layout_width="wrap_content"
+                        android:lineSpacingExtra="@dimen/_6pxh"
+                        android:singleLine="true"
+                        android:text="@{reportsAdminVM.reportsAdminModel.txtTimeFive}"
+                        style="@style/txtPoppinsregular12" tools:text="@string/lbl_1_00pm_2_40pm2"/>
+                </LinearLayout>
+                <ImageButton
+                    android:background="@drawable/rectangle_bg_gray_50_radius_8"
+                    android:id="@+id/btnArrowleftSix"
+                    android:layout_height="@dimen/_32pxh"
+                    android:layout_marginBottom="@dimen/_25pxv"
+                    android:layout_marginTop="@dimen/_4pxv"
+                    android:layout_width="@dimen/_32pxh"
+                    android:paddingHorizontal="@dimen/_11pxh"
+                    android:paddingVertical="@dimen/_11pxv"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/img_arrowleft_gray_900" tools:ignore="ContentDescription"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

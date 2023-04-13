@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="assetInformationVM" type="com.luissapplication.app.modules.assetinformation.data.viewmodel.AssetInformationVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearAssetinformati"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <FrameLayout android:gravity="start"
+            android:id="@+id/frameStackvector"
+            android:layout_height="@dimen/_463pxv" android:layout_width="match_parent">
+            <ImageView android:id="@+id/imageVector"
+                android:layout_gravity="start"
+                android:layout_height="@dimen/_463pxh"
+                android:layout_width="match_parent"
+                android:scaleType="fitXY"
+                imageRes="@{@drawable/img_vector}"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_vector"/>
+            <LinearLayout android:id="@+id/linearColumncomputer"
+                android:layout_gravity="top|center"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_63pxv"
+                android:layout_marginEnd="@dimen/_22pxh"
+                android:layout_marginStart="@dimen/_22pxh"
+                android:layout_marginTop="@dimen/_63pxv"
+                android:layout_width="match_parent"
+                android:orientation="vertical" style="@style/groupStylecornerRadius_5">
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbarToolbar"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_24pxh"
+                    android:layout_marginStart="@dimen/_24pxh"
+                    android:layout_marginTop="@dimen/_10pxv"
+                    android:layout_width="match_parent" app:contentInsetStart="0dp">
+                    <LinearLayout
+                        android:id="@+id/linearRowlaptop11avail"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent" android:orientation="horizontal">
+                        <LinearLayout android:gravity="start"
+                            android:id="@+id/linearColumnlaptop11avail"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.62"
+                            android:layout_width="0dp" android:orientation="vertical">
+                            <TextView android:id="@+id/txtLaptopDetails"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="@dimen/_10pxh"
+                                android:layout_width="match_parent"
+                                android:lineSpacingExtra="@dimen/_7pxh"
+                                android:text="@{assetInformationVM.assetInformationModel.txtLaptopDetails}"
+                                style="@style/txtPoppinsmedium14_2" tools:text="@string/msg_laptop_11_avail"/>
+                            <TextView android:id="@+id/txtLanguage"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="@dimen/_10pxh"
+                                android:layout_marginTop="@dimen/_27pxv"
+                                android:layout_width="match_parent"
+                                android:lineSpacingExtra="@dimen/_4pxh"
+                                android:text="@{assetInformationVM.assetInformationModel.txtLanguage}"
+                                style="@style/txtPoppinsregular14" tools:text="@string/msg_11_available_1"/>
+                        </LinearLayout>
+                        <ImageButton
+                            android:background="@drawable/rectangle_bg_white_a700_87_radius_46"
+                            android:id="@+id/btnComputer"
+                            android:layout_height="@dimen/_90pxh"
+                            android:layout_marginBottom="@dimen/_12pxv"
+                            android:layout_marginTop="@dimen/_22pxv"
+                            android:layout_width="@dimen/_92pxh"
+                            android:paddingHorizontal="@dimen/_10pxh"
+                            android:paddingVertical="@dimen/_10pxv"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/img_computer" tools:ignore="ContentDescription"/>
+                    </LinearLayout>
+                </androidx.appcompat.widget.Toolbar>
+                <TextView android:id="@+id/txtDescription"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_10pxv"
+                    android:layout_marginEnd="@dimen/_25pxh"
+                    android:layout_marginStart="@dimen/_25pxh"
+                    android:layout_marginTop="@dimen/_20pxv"
+                    android:layout_width="match_parent"
+                    android:lineSpacingExtra="@dimen/_6pxh"
+                    android:text="@{assetInformationVM.assetInformationModel.txtDescription}"
+                    style="@style/txtPoppinsregular12_2" tools:text="@string/msg_lorem_ipsum_dol2"/>
+            </LinearLayout>
+        </FrameLayout>
+        <androidx.appcompat.widget.AppCompatButton
+            android:ellipsize="end" android:gravity="center"
+            android:id="@+id/btnContinue"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_22pxh"
+            android:layout_marginStart="@dimen/_22pxh"
+            android:layout_marginTop="@dimen/_32pxv"
+            android:layout_width="match_parent"
+            android:lineSpacingExtra="@dimen/_8pxh"
+            android:paddingBottom="@dimen/_18pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingTop="@dimen/_18pxv" android:singleLine="true"
+            android:text="@string/lbl_continue"
+            android:textAllCaps="false"
+            style="@style/btnGradientRounded_2" tools:text="@string/lbl_continue"/>
+    </LinearLayout>
+</layout>
